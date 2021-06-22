@@ -3,12 +3,16 @@
 *@author Andre Luis de Oliveira
 *@date 21/06/2021
 *@brief Lista diagnóstica de programação
-
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 void calculaHorasMinutos(int totalMinutos, int* minutos, int* horas);
 
 int main(){
+  setlocale(LC_ALL,"");//Mudando Localização
   //Declarando variáveis
   int totalMinutos;
   int minutos;

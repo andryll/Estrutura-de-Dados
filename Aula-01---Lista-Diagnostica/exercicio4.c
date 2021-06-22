@@ -6,11 +6,15 @@
 
 */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
 void preencheVetor(int* vetor, int n);
 
 int main(){
+  setlocale(LC_ALL,"");//Mudando Localização
   //Declarando variáveis
-
   int n;
   int *vetor;
   //Solicitando tamanho do vetor
@@ -18,7 +22,7 @@ int main(){
   do {
     scanf("%d",&n);
     if(n<=0)
-      printf("So são aceitos valores positivos! Digite novamente: ");
+      printf("Só são aceitos valores positivos! Digite novamente: ");
   }while(n<=0);
 
   //Alocando vetor do tamanho escolhido
@@ -47,7 +51,7 @@ void preencheVetor(int* vetor, int n){
   printf("\nPor favor digite os valores desejados do vetor.\n");
   //Loop para percorrer todas as posições
   for (int i = 0; i < n; i++) {
-    printf("Posicao %d: ", i + 1);
+    printf("Posição %d: ", i + 1);
     scanf("%d",&vetor[i]);
   }//for
   return;

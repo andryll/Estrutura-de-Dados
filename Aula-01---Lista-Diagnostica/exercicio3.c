@@ -8,9 +8,14 @@ Escreva uma função recursiva para calcular o valor de um número inteiro de base
 x elevada a um expoente inteiro y.
 */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
 int x_elevado_y(int x, int y);
 
 int main(){
+  setlocale(LC_ALL,"");//Mudando Localização
   //Declarando variáveis
   int x;
   int y;
