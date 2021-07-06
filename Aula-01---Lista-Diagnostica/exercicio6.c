@@ -217,8 +217,7 @@ void embaralharBaralho(Carta baralho[4][13]){
       temp.naipe = baralho[i][j].naipe;
       temp.valor = baralho[i][j].valor;
       temp.foiJogada = baralho[i][j].foiJogada;
-
-
+      
       baralho[i][j].naipe = baralho[l][c].naipe;
       baralho[i][j].valor = baralho[l][c].valor;
       baralho[i][j].foiJogada = baralho[l][c].foiJogada;
